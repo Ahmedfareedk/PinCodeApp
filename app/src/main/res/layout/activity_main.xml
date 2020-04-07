@@ -71,7 +71,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="6"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -93,7 +93,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="4"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
         </LinearLayout>
@@ -114,7 +114,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="3"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -125,7 +125,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="2"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -136,7 +136,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="0"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
         </LinearLayout>
@@ -157,7 +157,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="8"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -168,7 +168,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="9"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -179,7 +179,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="1"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
         </LinearLayout>
@@ -201,7 +201,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="CLR"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -212,7 +212,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="5"
                 android:textColor="@color/light_gray"
                 android:textSize="32sp" />
 
@@ -223,9 +223,13 @@
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
-                android:text="7"
+                android:text="Del"
+                android:padding="30dp"
+                android:drawableBottom="@drawable/ic_delete_black_24dp"
+                android:drawableTint="@color/light_gray"
                 android:textColor="@color/light_gray"
-                android:textSize="32sp" />
+                android:textSize="20sp"
+                />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
