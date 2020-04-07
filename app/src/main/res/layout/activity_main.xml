@@ -224,11 +224,11 @@
                 android:background="@drawable/numbers_background"
                 android:gravity="center"
                 android:text="Del"
-                android:padding="30dp"
+                android:padding="18dp"
                 android:drawableBottom="@drawable/ic_delete_black_24dp"
                 android:drawableTint="@color/light_gray"
                 android:textColor="@color/light_gray"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 />
         </LinearLayout>
     </LinearLayout>
