@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PinCodeApp</string>
+    <string name="enter_pass">Enter the passcode you set</string>
+</resources>

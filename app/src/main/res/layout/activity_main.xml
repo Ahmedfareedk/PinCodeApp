@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/homeBackground"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/locker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_locked_black_24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enter_pass_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/enter_pass"
+        android:textAllCaps="false"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@+id/locker"
+        app:layout_constraintRight_toRightOf="@+id/locker"
+        app:layout_constraintTop_toBottomOf="@+id/locker" />
+
+
+    <EditText
+        android:id="@+id/pass_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:textColor="@color/light_gray"
+        android:textColorHint="@color/light_gray"
+        app:layout_constraintLeft_toLeftOf="@+id/enter_pass_TV"
+        app:layout_constraintRight_toRightOf="@+id/enter_pass_TV"
+        app:layout_constraintTop_toBottomOf="@+id/enter_pass_TV" />
+
+    <LinearLayout
+        android:id="@+id/linear_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass_ET">
+
+        <LinearLayout
+            android:id="@+id/first_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_linear"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/nums_margin_left"
+                android:layout_weight="1"
+                android:background="@drawable/numbers_background"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/light_gray"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
