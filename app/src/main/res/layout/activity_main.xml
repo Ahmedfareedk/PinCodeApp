@@ -35,10 +35,13 @@
         android:id="@+id/pass_ET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:maxLength="4"
         android:layout_marginTop="8dp"
         android:background="@drawable/edit_text_background"
-        android:hint="password"
-        android:inputType="numberPassword"
         android:textColor="@color/light_gray"
         android:textColorHint="@color/light_gray"
         app:layout_constraintLeft_toLeftOf="@+id/enter_pass_TV"
@@ -66,6 +69,7 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/num_six"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -77,6 +81,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_seven"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -88,6 +93,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_four"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -110,6 +116,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_three"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
@@ -120,6 +127,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_two"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -131,6 +139,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_zero"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -153,6 +162,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_eight"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
@@ -163,6 +173,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_nine"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -174,6 +185,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_one"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -197,6 +209,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/clear_btn"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
@@ -207,6 +220,7 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/num_five"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -218,18 +232,19 @@
 
             <TextView
                 android:layout_width="0dp"
+                android:id="@+id/del_btn"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
-                android:gravity="center"
-                android:text="Del"
-                android:padding="18dp"
                 android:drawableBottom="@drawable/ic_delete_black_24dp"
                 android:drawableTint="@color/light_gray"
+                android:gravity="center"
+                android:paddingTop="32dp"
+                android:paddingBottom="32dp"
+                android:text="Del"
                 android:textColor="@color/light_gray"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
