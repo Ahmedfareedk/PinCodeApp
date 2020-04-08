@@ -11,7 +11,7 @@
         android:id="@+id/locker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:src="@drawable/ic_locked_black_24dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -30,23 +30,36 @@
         app:layout_constraintRight_toRightOf="@+id/locker"
         app:layout_constraintTop_toBottomOf="@+id/locker" />
 
+    <TextView
+        android:id="@+id/message_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/light_gray"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@+id/enter_pass_TV"
+        app:layout_constraintRight_toRightOf="@+id/enter_pass_TV"
+        app:layout_constraintTop_toBottomOf="@+id/enter_pass_TV" />
+
 
     <EditText
         android:id="@+id/pass_ET"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
-        android:inputType="numberPassword"
-        android:gravity="center"
-        android:maxLength="4"
         android:layout_marginTop="8dp"
         android:background="@drawable/edit_text_background"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:maxLength="4"
         android:textColor="@color/light_gray"
         android:textColorHint="@color/light_gray"
         app:layout_constraintLeft_toLeftOf="@+id/enter_pass_TV"
         app:layout_constraintRight_toRightOf="@+id/enter_pass_TV"
-        app:layout_constraintTop_toBottomOf="@+id/enter_pass_TV" />
+        app:layout_constraintTop_toBottomOf="@+id/message_TV" />
 
     <LinearLayout
         android:id="@+id/linear_parent"
@@ -80,8 +93,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_seven"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -92,8 +105,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_four"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -115,8 +128,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_three"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
@@ -126,8 +139,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_two"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -138,8 +151,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_zero"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -161,8 +174,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_eight"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
@@ -172,8 +185,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_nine"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -184,8 +197,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_one"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -208,8 +221,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/clear_btn"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/numbers_background"
@@ -219,8 +232,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/num_five"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
@@ -231,8 +244,8 @@
                 android:textSize="32sp" />
 
             <TextView
-                android:layout_width="0dp"
                 android:id="@+id/del_btn"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/nums_margin_left"
                 android:layout_weight="1"
