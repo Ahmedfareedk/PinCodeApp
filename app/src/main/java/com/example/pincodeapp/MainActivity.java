@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
             numSix, numSeven, numEight,
             numNine, clearBtn, delBtn,
             passTV, messageTV;
-    ImageView lockImageView;
+    private ImageView lockImageView;
     private final String CORRECT_PASS = "2332";
 
 
@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         passTV = findViewById(R.id.pass_ET);
         messageTV = findViewById(R.id.message_TV);
         lockImageView = findViewById(R.id.locker);
-
-        String pass = passTV.getText().toString();
+        lockImageView = findViewById(R.id.locker);
 
 
         numZero.setOnClickListener(appendToPassTv(numZero));
@@ -66,25 +65,28 @@ public class MainActivity extends AppCompatActivity {
                 if (view == clearBtn) {
                     passTV.setText("");
                     messageTV.setVisibility(View.GONE);
-                } else if (view == delBtn ) {
+                    lockImageView.setImageResource(R.drawable.ic_locked_black_24dp);
+                } else if (view == delBtn) {
                     String currentText = passTV.getText().toString();
-                  if(currentText.length() > 0 && currentText.length() < 4) {
-                      passTV.setText(currentText.substring(0, currentText.length() - 1));
-                  }
+                    if (currentText.length() > 0 && currentText.length() < 4) {
+                        passTV.setText(currentText.substring(0, currentText.length() - 1));
+                    }
 
                 } else {
                     passTV.append(view.getText().toString());
-                    if(passTV.getText().toString().equals(CORRECT_PASS)){
+                    if (passTV.getText().toString().equals(CORRECT_PASS)) {
                         messageTV.setText("Welcome");
+                        messageTV.setTextColor(getResources().getColor(R.color.right_pass));
+                        lockImageView.setImageResource(R.drawable.ic_lock_open_black_24dp);
                         messageTV.setVisibility(View.VISIBLE);
-                    } else if(passTV.getText().toString().length() == 4 && !passTV.getText().toString().equals(CORRECT_PASS))
-                    {
+                    } else if (passTV.getText().toString().length() == 4 && !passTV.getText().toString().equals(CORRECT_PASS)) {
                         messageTV.setText("wrong pass!");
+                        messageTV.setTextColor(getResources().getColor(R.color.wrong_pass));
                         messageTV.setVisibility(View.VISIBLE);
                     }
                 }
             }
-             
+
         };
 
 
