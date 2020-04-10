@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private long timeLeftInMillis = MILLI_SECONDS;
     private boolean isTimeRunning;
     private LinearLayout parentView;
+    private boolean isRight;
 
 
 
@@ -76,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                if (view == clearBtn && !isTimeRunning) {
+                if (view == clearBtn && !isTimeRunning && !isRight) {
                     passTV.setText("");
                     messageTV.setVisibility(View.GONE);
                     lockImageView.setImageResource(R.drawable.ic_locked_black_24dp);
@@ -100,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                         messageTV.setTextColor(getResources().getColor(R.color.right_pass));
                         lockImageView.setImageResource(R.drawable.ic_lock_open_black_24dp);
                         messageTV.setVisibility(View.VISIBLE);
+                        isRight = true;
 
 
 
@@ -113,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "you have "+attempt+" attempts left", Toast.LENGTH_SHORT).show();
                         passTV.setText("");
                         attempt--;
+                        isRight = false;
                     }
 
                     if(counter == 3){
